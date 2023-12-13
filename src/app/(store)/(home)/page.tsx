@@ -6,7 +6,7 @@ import Link from "next/link";
 async function getFeaturedProducts(): Promise<IProduct[]> {
   const response = await api('/products/featured', {
     next: {
-      revalidate: 60 * 60, // 1 hour
+      revalidate: 60 * 60, // 1 hour - a cada uma hora eu faço uma requisição para o meu back-end
     },
   })
   const products = await response.json()
