@@ -25,6 +25,17 @@ export async function generateMetadata({ params, }: IProductProps): Promise<Meta
         title: product.title,
     }
 }
+
+// Geração de produtos (mais mostrados) estáticos na build
+export async function generateStaticParams() {
+    const response = await api('/products/features')
+    const products: IProduct[]  = await response.json()
+    
+    // return [{ slug: 'moletom-never-stop-learning' }]
+    return products.map((product) => {
+        return { slug: product.slug }
+    })
+}
   
 export default async function ProductPage({ params }: IProductProps) {
     const product = await getProduct(params.slug)
