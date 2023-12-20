@@ -1,6 +1,5 @@
 import { z } from 'zod'
 import data from '../data.json'
-import { NextResponse } from 'next/server'
 
 export async function GET(_: Request, {params}: {params: {slug: string}}) {
     await new Promise((resolve) => setTimeout(resolve, 1000))
