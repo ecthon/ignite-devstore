@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CartWidget } from "./cart-widget";
-import { SerachForm } from "./search-form";
+import { SearchForm } from "./search-form";
 
 export function Header() {
     return (
@@ -10,7 +10,7 @@ export function Header() {
                 <Link href="/" className="text-2xl font-extrabold text-white">
                     devstore
                 </Link>
-               <SerachForm />
+               <SearchForm />
             </div>
             <div className="flex items-center gap-4">
                 <CartWidget />
