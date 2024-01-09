@@ -18,7 +18,7 @@ jobs:
         run: npm install
       
       - name: Cypress run
-        uses: cypress-io/github-actions@v6
+        uses: cypress-io/github-actions@latest
         env:
           APP_URL: "http://localhost:3000"
           NEXT_PUBLIC_API_BASE_URL: "https://ignite-devstore-api-products.vercel.app/"
