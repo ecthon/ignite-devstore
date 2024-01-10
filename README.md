@@ -45,5 +45,6 @@ $ npm run dev
 Endpoint dos produtos: https://ignite-devstore-api-products.vercel.app/api/products </br>
 Repositório da API: https://github.com/ecthon/ignite-devstore-api-products
 
-## Desenvolvido
+---
+
 Desenvolvido por [@ecthon](https://www.linkedin.com/in/ecthon/).
